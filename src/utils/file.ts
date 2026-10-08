@@ -34,8 +34,7 @@ export function readRelativeFile(module: string, path: string) {
 
 /**
  * Read a shader file and split it into declarations and main code, since
- * GNOME's `add_glsl_snippet` function takes those parts as two separate
- * arguments.
+ * GNOME's shader APIs take those parts as separate arguments.
  *
  * @param module - `import.meta.url` of the current module.
  * @param path - File path relative to the current module.
